@@ -1,5 +1,8 @@
 .catalog {
     padding-bottom: 103px;
+    .container {
+        padding: 0;
+    }
     &__tabs {
         margin: 0;
         margin-top: 69px;
@@ -40,7 +43,7 @@
     &__content {
         margin-top: 60px;
         display: none;
-        justify-content: space-between;
+        justify-content: start;
         flex-wrap: wrap;
         &_active {
             display: flex;
@@ -54,6 +57,10 @@
         padding: 20px 20px 26px 20px;
         overflow: hidden;
         margin-bottom: 20px;
+        margin-right: auto;
+        &:nth-child(3n+3) {
+            margin-right: 0;
+        }
         &__img {
             display: block;
             margin: 0 auto;
@@ -135,19 +142,16 @@
         }
         &__wrapper {
             display: flex;
-            width: 200%;
-            &_active {
-                 width: calc(200% + 43px);
-            }
+            width: calc(200% + 43px);
+            
         }
         &__content {
             width: 50%;
-            margin-right: 0;
-            transform: translateX(calc(-100% - 20px));
+            margin-right: 20px;
+            transform: translateX(calc(-100% - 40px));
             transition: 0.3s all;
             &_active {
                 transform: translateX(0%);
-                margin-right: 20px;
             }
         }
         &__list {
@@ -161,14 +165,14 @@
             margin-bottom: 0;
             list-style-type: none;
             &_active {
-                transform: translateX(-100%);
-                margin-left: 0;
+                transform: translateX(calc(-100% - 40px));
             }
             li {
                 position: relative;
                 margin-top: 20px;
                 color: #555555;
                 font-size: 14px;
+                line-height: 16px;
                 font-weight: 300;
                 &:nth-child(1) {
                     margin-top: 0;

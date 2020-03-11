@@ -17,6 +17,20 @@
             width: 550px;
         }
     }
+    .catalog {
+        &__content {
+            justify-content: space-evenly;
+        }
+        &-item {
+            margin-right: 0;
+            &:nth-child(2n+1) {
+                margin-left: 3%;
+            }
+            &:nth-child(2n+2) {
+                margin-right: 3%;
+            }
+        }
+    }
 
 }
 @media (max-width: 767px) {
@@ -28,7 +42,7 @@
             margin-bottom: 15px;
             img {
                 position: absolute;
-                top: 110px;
+                top: 88px;
                 width: 250px;
             }
         }
@@ -75,10 +89,74 @@
         transform: translateX(-50%);
     }
     .carusel {
-        min-height: 543px;
+        min-height: 344px;
         padding: 60px 0;
         &__iner {
             width: 500px;
+        }
+    }
+    .catalog {
+        padding-bottom: 89px;
+        &__tabs {
+            margin-top: 38px;
+        }
+        &__tab {
+            width: 160px;
+            height: 42px;
+            line-height: 40px;
+            font-size: 15px;
+            &:hover {
+                box-shadow: none;
+            }
+        }
+        &__content {
+            margin-top: 44px;
+        }
+        &-item {
+            width: 259px;
+            height: 418px;
+            &:nth-child(2n+1) {
+                margin-left: 0;
+            }
+            &:nth-child(2n+2) {
+                margin-right: 0;
+            }
+            &__subtitle {
+                margin-top: 16px;
+                font-size: 15px;
+            }
+            &__descr {
+                margin-top: 12px;
+                font-size: 13px;
+                line-height: 14px;
+            }
+            &__link {
+                margin-top: 16px;
+            }
+            hr {
+                margin: 11px 0 13px 0;
+            }
+            &__old-price {
+                font-size: 13px;
+                line-height: 12px;
+            }
+            &__new-price {
+                font-size: 19px;
+                line-height: 19px;
+            }
+            &__list {
+                li {
+                    font-size: 13px;
+                    margin-top: 16px;
+                    line-height: 16px;
+                }
+            }
+        }
+    }
+    .button {
+        &_mini {
+            width: 110px;
+            height: 38px;
         }
     }
     
@@ -115,6 +193,9 @@
         &_form {
             width: 100%;
             height: 55px;
+        }
+        &_mini {
+            width: 94px;
         }
     }
     .promo {
@@ -175,6 +256,9 @@
             font-size: 15px;
             line-height: 21px;
         }
+        &_catalog {
+            font-size: 15px;
+        }
     }
     .consultation {
         min-height: 512px;
@@ -189,6 +273,65 @@
         padding: 40px 0;
         &__iner {
             width: 290px;
+        }
+    }
+    .catalog {
+        padding-bottom: 37px;
+        &__tabs {
+            margin-top: 25px;
+        }
+        &__tab {
+            width: 89px;
+            height: 24px;
+            line-height: 20px;
+            font-size: 8px;
+            &_active {
+                line-height: 24px;
+            }
+        }
+        &__content {
+            margin-top: 31px;
+            flex-direction: column;
+            align-items: center;
+        }
+        &-item {
+            width: 240px;
+            height: 363px;
+            &__img {
+                height: 164px;
+            }
+            &__subtitle {
+                margin-top: 12px;
+                font-size: 12px;
+                line-height: 12px;
+            }
+            &__descr {
+                margin-top: 10px;
+                font-size: 10px;
+                line-height: 11px;
+            }
+            &__link {
+                margin-top: 14px;
+                font-size: 12px;
+            }
+            hr {
+                margin: 15px 0 13px 0;
+            }
+            &__old-price {
+                font-size: 11px;
+                line-height: 12px;
+            }
+            &__new-price {
+                font-size: 15px;
+                line-height: 16px;
+            }
+            &__list {
+                li {
+                    font-size: 10px;
+                    margin-top: 18px;
+                    line-height: 12px;
+                }
+            }
         }
     }
 }

@@ -1,6 +1,6 @@
 @import 'base/variables';
 * {
-    font-family: ' Museo ', sans-serif;
+    font-family: 'Museo', sans-serif;
 }
 .container {
     position: relative;
@@ -17,6 +17,7 @@
 @import 'blocks/carusel';
 @import 'blocks/catalog';
 @import 'blocks/comments';
+@import 'blocks/footer';
 
 
 .hiden_media {

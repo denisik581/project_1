@@ -116,6 +116,9 @@
         &__descr {
             text-align: center;
         }
+        .error {
+            font-size: 13px;
+        }
     }
     .feed-form {
         margin-left: 50%;
@@ -224,6 +227,11 @@
     }
     .footer {
         height: 390px;
+    }
+    .modal {
+        .error {
+            font-size: 13px;
+        }
     }
     
 }
@@ -335,6 +343,9 @@
         &__descr {
             font-size: 14px;
             margin-top: 43px;
+        }
+        .error {
+            font-size: 11px;
         }
     }
     .carusel {
@@ -493,6 +504,9 @@
             font-size: 14px;
             line-height: 14px;
             margin-top: 11px;
+        }
+        .error {
+            font-size: 11px;
         }
     }
 }

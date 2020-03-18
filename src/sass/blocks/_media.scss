@@ -263,6 +263,9 @@
         &_mini {
             width: 94px;
         }
+        &_modal {
+            height: 43px;
+        }
     }
     .promo {
         min-height: 590px;
@@ -460,6 +463,36 @@
                     height: 15px;
                 }
             }
+        }
+    }
+    .feed-form {
+        &_mt25 {
+            width: 200px; 
+            input {
+                height: 43px;
+                font-size: 12px;
+            }
+        }
+    }
+    .modal {
+        width: 250px;
+        min-height: 369px;
+        padding: 38px 40px 40px 40px;
+        &__close {
+            top: -5px;
+            right: -31px;
+            font-size: 31px;
+            line-height: 30px;
+            padding: 0 7px;
+        }
+        &__subtitle{
+            font-size: 13px;
+            line-height: 13px;
+        }
+        &__descr {
+            font-size: 14px;
+            line-height: 14px;
+            margin-top: 11px;
         }
     }
 }

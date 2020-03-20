@@ -10,10 +10,11 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/slick.css">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css"> -->
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <div class="promo">
+    <div id="up" class="promo fadeIn wow" data-wow-delay="0.2s">
         <div class="container">
             <a href="#" class="header__logo hiden_media">
                 <img src="icon/logo.png" alt="logo">
@@ -56,7 +57,7 @@
                 <button data-modal="consultation" class="button button_main">заказать кОНСУЛЬТАЦИЮ</button>
                 <div class="promo__link">
                     или
-                    <a href="#">ПЕРЕЙТИ В КАТАЛОГ</a>
+                    <a href="#cat">ПЕРЕЙТИ В КАТАЛОГ</a>
                 </div>
             </div>
 
@@ -65,26 +66,26 @@
 
     <div class="adventeger">
         <div class="container">
-            <h2 class="title">НАШИ ПРЕИМУЩЕСТВА</h2>
+            <h2 class="title fadeIn wow" data-wow-delay="0.5s">НАШИ ПРЕИМУЩЕСТВА</h2>
             <div class="adventeger__wrapper">
-                <div class="adventeger__item">
-                    <img src="icon/cup.png" alt="cup">
+                <div class="adventeger__item fadeInUp wow" data-wow-duration="1s" data-wow-delay="1s">
+                    <img src="icon/cup.png" alt="cup" class="adventeger__icon">
                     <div class="adventeger__subtitle">Делимся опытом</div>
                     <div class="adventeger__descr">
                         Наши сотрудники всегда готовы поделиться своим опытом,<br> 
                         так как сами бегают полумарафоны, переплыли Босфор, готовятся к соревнованиям по триатлону!
                     </div>
                 </div>
-                <div class="adventeger__item">
-                    <img src="icon/heart.png" alt="heart">
+                <div class="adventeger__item fadeInUp wow" data-wow-duration="1s" data-wow-delay="1.2s">
+                    <img src="icon/heart.png" alt="heart" class="adventeger__icon adventeger__icon_animated">
                     <div class="adventeger__subtitle">Заботимся о здоровье</div>
                     <div class="adventeger__descr">
                         Мы работаем для того,<br> 
                         чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и Вашим близким!                        
                     </div>
                 </div>
-                <div class="adventeger__item">
-                    <img src="icon/shoe.png" alt="shoe">
+                <div class="adventeger__item fadeInUp wow" data-wow-duration="1s" data-wow-delay="1.4s">
+                    <img src="icon/shoe.png" alt="shoe" class="adventeger__icon">
                     <div class="adventeger__subtitle">Учим бегать</div>
                     <div class="adventeger__descr">
                         Помогаем с обучением<br>
@@ -98,24 +99,24 @@
 
     <div class="consultation">
         <div class="container">
-            <h2 class="title title_consultation">Получите бесплатную консультацию<br class="n-hiden_media"> по подбору пульсометра </h2>
+            <h2 class="title title_consultation fadeIn wow" data-wow-delay="0.4s">Получите бесплатную консультацию<br class="n-hiden_media"> по подбору пульсометра </h2>
             <div class="consultation__descr">
                     Просто заполните форму заявки<br> 
                 и мы перезвоним вам в течении 10 минут
             </div>
 
             <form id="first_form" class="feed-form" action="#">
-                <input name="name" required placeholder="Ваше имя " type="text">
-                <input name="phone" required placeholder="Ваш телефон ">
-                <input name="email" required placeholder="Ваш E-mail " type="email">
+                <input name="name" required placeholder="Ваше имя " type="text" class="fadeInUp wow" data-wow-delay="0.2s">
+                <input name="phone" required placeholder="Ваш телефон " class="fadeInUp wow" data-wow-delay="0.2s">
+                <input name="email" required placeholder="Ваш E-mail " type="email" class="fadeInUp wow" data-wow-delay="0.2s">
 
                 <!-- <input type="submit" value="заказать кОНСУЛЬТАЦИЮ"> -->
-                <button class="button button_form">заказать кОНСУЛЬТАЦИЮ</button>
+                <button class="button button_form fadeInUp wow" data-wow-delay="0.2s">заказать кОНСУЛЬТАЦИЮ</button>
             </form>
         </div>
     </div>
 
-    <section class="carusel">
+    <div class="carusel">
         <div class="container">
             <div class="carusel__iner">
                 <div>
@@ -131,12 +132,12 @@
             <!-- <button type="button" class="prev"><img src="icon/left_a.png"></button>
             <button type="button" class="next"><img src="icon/right_a.png"></button> -->
         </div>
-    </section>
+    </div>
     
     
-    <section class="catalog">
+    <section id="cat" class="catalog">
         <div class="container">
-            <h2 class="title title_catalog">Каталог пульсометров</h2>
+            <h2 class="title title_catalog fadeIn wow" data-wow-delay="0.1s">Каталог пульсометров</h2>
 
             <ul class="catalog__tabs">
                 <li class="catalog__tab catalog__tab_active"><div>Для фитнеса</div></li>
@@ -145,7 +146,7 @@
             </ul>
 
             <div class="catalog__content catalog__content_active">
-                <div class="catalog-item">
+                <div class="catalog-item fadeInUp wow" data-wow-delay="0.3s">
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
                             <img src="img/heart_rate_monitor/1.png" alt="pulsometr" class="catalog-item__img">
@@ -174,7 +175,7 @@
                     </div>
 
                 </div>
-                <div class="catalog-item">
+                <div class="catalog-item fadeInUp wow" data-wow-delay="0.4s">
                     <div class="catalog-item__wrapper catalog-item__wrapper_active">
                         <div class="catalog-item__content catalog-item__content_active">
                             <img src="img/heart_rate_monitor/1.png" alt="pulsometr" class="catalog-item__img">
@@ -203,7 +204,7 @@
                     </div>
 
                 </div>
-                <div class="catalog-item">
+                <div class="catalog-item fadeInUp wow" data-wow-delay="0.5s">
                     <div class="catalog-item__wrapper catalog-item__wrapper_active">
                         <div class="catalog-item__content catalog-item__content_active">
                             <img src="img/heart_rate_monitor/1.png" alt="pulsometr" class="catalog-item__img">
@@ -232,7 +233,7 @@
                     </div>
 
                 </div>
-                <div class="catalog-item">
+                <div class="catalog-item fadeInUp wow" data-wow-delay="0.3s">
                     <div class="catalog-item__wrapper catalog-item__wrapper_active">
                         <div class="catalog-item__content catalog-item__content_active">
                             <img src="img/heart_rate_monitor/1.png" alt="pulsometr" class="catalog-item__img">
@@ -261,7 +262,7 @@
                     </div>
 
                 </div>
-                <div class="catalog-item">
+                <div class="catalog-item fadeInUp wow" data-wow-delay="0.4s">
                     <div class="catalog-item__wrapper catalog-item__wrapper_active">
                         <div class="catalog-item__content catalog-item__content_active">
                             <img src="img/heart_rate_monitor/1.png" alt="pulsometr" class="catalog-item__img">
@@ -290,7 +291,7 @@
                     </div>
 
                 </div>
-                <div class="catalog-item">
+                <div class="catalog-item fadeInUp wow" data-wow-delay="0.5s">
                     <div class="catalog-item__wrapper catalog-item__wrapper_active">
                         <div class="catalog-item__content catalog-item__content_active">
                             <img src="img/heart_rate_monitor/1.png" alt="pulsometr" class="catalog-item__img">
@@ -420,7 +421,7 @@
     <section class="comments">
         <div class="container">
             <h2 class="title">отзывы клиентов</h2>
-            <div class="comments__comment">
+            <div class="comments__comment fadeInUp wow">
                 <img src="img/reviews/1.png" alt="" class="comments__comment__img">
                 <div class="comments__comment__name">Ирина Иванченко</div>
                 <div class="comments__comment__subtitle">2 полумарафона</div>
@@ -434,7 +435,7 @@
                 </div>
             </div>
             <hr>
-            <div class="comments__comment">
+            <div class="comments__comment fadeInUp wow"  data-wow-delay="0.5s">
                 <img src="img/reviews/2.png" alt="1" class="comments__comment__img">
                 <div class="comments__comment__name">Иван Сёмочкин</div>
                 <div class="comments__comment__subtitle">1 полумарафон</div>
@@ -446,7 +447,7 @@
                 </div>
             </div>
             <hr>
-            <div class="comments__comment">
+            <div class="comments__comment fadeInUp wow"  data-wow-delay="0.5s">
                 <img src="img/reviews/3.png" alt="2" class="comments__comment__img">
                 <div class="comments__comment__name">Юлия Дашкина</div>
                 <div class="comments__comment__subtitle">2 полумарафона</div>
@@ -510,6 +511,10 @@
         </div>
     </div>
 
+    <a href="#up" class="pageup">
+        <img src="icon/chevron-circle-up-solid.svg" alt="circle-up">
+    </a>
+    
     
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
@@ -517,6 +522,7 @@
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.1/min/tiny-slider.js"></script> -->
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

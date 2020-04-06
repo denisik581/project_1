@@ -54,8 +54,8 @@ $(document).ready(function(){
             $('.overlay, #order').fadeIn('fast');
         });
     });
-
     
+
     function validateForms(form) {
         $(form).validate({
             rules: {
@@ -74,16 +74,22 @@ $(document).ready(function(){
                     email: "ваш email должен быть в формате: name@domain.com"
                 }
             }
+
         });
     }
+    jQuery.validator.setDefaults({
+        debug: true,
+        success: "valid"
+    });
 
     validateForms('#first_form');
-    validateForms('#consultation form');
-    validateForms('#order form');
+    validateForms('#consultation_form');
+    validateForms('#order_form');
 
-    $('input[name=phone]').mask("+7 (999) 999 99-99");
+ 
 
-    $('form').submit(function(e) {
+    
+    /* $('form').submit(function(e) {
         e.preventDefault();
         $.ajax({
             type: "POST",
@@ -98,15 +104,14 @@ $(document).ready(function(){
             $('form').trigger('reset');
         });
         return false;
-    });
+    });  */
 /* ___________________________________________________________________________________ */
-   /*  $('form')(function() {
-        if ($(this).find(".error")) {
-
-        } else {
-            $('form').submit(function(e) {
-                e.preventDefault();
-                $.ajax({
+    
+    $('form').submit(function (e) {
+        if ($(this).valid() === true) {
+            console.log('Форма прошла валидацию, отправляем письмо.');
+            e.preventDefault();
+            $.ajax({
                 type: "POST",
                 url: "mailer/smart.php",
                 data: $(this).serialize()
@@ -114,16 +119,17 @@ $(document).ready(function(){
                 $(this).find("input").val("");
                 $('#consultation, #order').fadeOut();
                 $('.overlay, #thanks').fadeIn('fast');
-    
-    
+
+
                 $('form').trigger('reset');
             });
             return false;
-            });
         }
-    }); */
+    });
+
 /* _____________________________________________________________________________________________ */
 
+    $('input[name=phone]').mask("+7 (999) 999 99-99");
     //scrol
 
     $(window).scroll(function() {
